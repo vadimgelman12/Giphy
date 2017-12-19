@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giphy API Project</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">	
+
+
+</head>
+<body background = "assets/images/camera.jpg">
+	<nav class="navbar navbar-default" style="background:gray">
+  		<div class="container">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<a class="navbar-brand" style="background:lightblue; color:black">Let's Get Giphy With It!!</a>
+      			<!-- <button type="button" id="start" class="btn btn-success">Start Game</button> -->
+
+ 			
+    		</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      			<ul class="nav navbar-nav navbar-right">
+<!--       				<div id="display2">Seconds Remaining:</div>
+      				<div id="display">60</div> -->
+      			</ul>
+    		</div><!-- /.navbar-collapse -->
+  		</div><!-- /.container-fluid -->
+	</nav>	
+
+<div class="container" id="wrapper">
+	<div class="row">
+		<div class="col-xs-8" style="background:white" id="main-body">
+			<div class="page-header">
+  				<h3 style="color:#4aaaa5">Giphy API animated GIFs:</h3>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4 id="pictures" style="background:white">
+					<!-- <img class="col-md-3" src="assets/images/cat.jpg" height="150" width="150"> -->
+					<div class="col-md-4" id="pictures-div">
+						
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="col-xs-4">
+			<div class="panel panel-default" id="animals-div" style= "text-align: center">
+  				<div class="panel-heading">
+    				<h3 class="panel-title" style="color:##4aaaa5"></h3>
+
+				    <form id="button-form">
+				      <label for="button-input">Button Name: </label>
+				      <input type="text" id="button-input"><br>
+
+				      <!-- Button triggers new movie to be added -->
+				      <input id="add-button" type="submit" value="Add a Button">
+				    </form>         				
+  				</div>
+  				<div class="panel-body">
+
+				    <!-- Rendered Buttons will get Dumped Here  -->
+				    <div id="buttons-view">
+				    	
+				    </div>
+
+
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="push"></div>
+</div>
+
+
+<footer>
+		&copy;Copyright 2017 Vadim Gelman
+</footer>	
+
+
+
+
+	<!-- JAVASCRIPT  -->
+	<!-- ========================================= -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script  type='text/javascript' src='assets/javascript/giphy.js'></script>		
+	
+</body>
+</html>
