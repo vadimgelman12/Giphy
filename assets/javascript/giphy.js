@@ -94,15 +94,17 @@ $(document).ready(function() {
 				// Creating a div to hold the movie
 				var pictureDiv = $("<div class='picture'>");
 
-				// Storing the rating data
+				// Storing the rating and title data
 				var rating = response.data[i].rating;
+				var title = response.data[i].title;
 
 				// Creating an element to have the rating displayed
 				var pRating = $("<p class='image-rating'>").text("Rating: " + rating);
+				var pTitle = $("<p class='image-title'>").text("Title: " + title);
 
-				// Displaying the rating
-				pictureDiv.append(pRating);
+				// Displaying the title
 
+				pictureDiv.append(pTitle);
 
 				// Retrieving the URL for the image
 				var imgURL = response.data[i].images.fixed_width_still.url;
@@ -126,6 +128,8 @@ $(document).ready(function() {
 
 				// Appending the image
 				pictureDiv.append(image);
+
+				pictureDiv.append(pRating);				
 
 				// Putting the data before previous pictures
 				$("#pictures-div").prepend(pictureDiv);

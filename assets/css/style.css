@@ -17,7 +17,7 @@ html, body {
 }
 
 .panel-heading{
-	background-color: #4aaaa5;
+  background-color: #4aaaa5;
 }
 
 #display {
@@ -31,7 +31,19 @@ html, body {
 
 }
 
+#pictures-div{
+	display: inline-block;
+}
 
+.picture{
+	display: inline-block;	
+}
+
+
+.image-rating{
+  margin-bottom:50px;
+   
+}
 
 #main-body {
 	border: 1px grey solid;
@@ -49,7 +61,7 @@ p {
 	border-color: black;
 	border-style: solid;
 	width:200px;
-	margin-top: 50px;
+	margin-top: 10px;
 	text-align: center;
 	background-color: lightgrey;
 }
